@@ -24,7 +24,7 @@ public class ModeTest {
         $("[data-test-id='login'] input").val(registeredUser.getLogin());
         $("[data-test-id='password'] input").val(registeredUser.getPassword());
         $("[data-test-id='action-login']").click();
-        $("h2").shouldHave(text("Интернет Банк"));
+        $("h2").shouldHave(text("Личный кабинет"));
 
     }
 
