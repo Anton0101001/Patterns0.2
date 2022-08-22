@@ -42,7 +42,7 @@ public class ModeTest {
     }
 
     @Test
-    @DisplayName("Should get error message if login with wrong login")
+    @DisplayName("Should get error message if login is wrong")
     void shouldGetErrorIfWrongLogin() {
         var registeredUser = getRegisteredUser("active");
         var wrongLogin = getRandomLogin();
