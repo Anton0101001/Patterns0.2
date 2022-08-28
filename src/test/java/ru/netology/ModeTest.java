@@ -38,7 +38,7 @@ public class ModeTest {
         $("[data-test-id='login'] input").val(blockedUser.getLogin());
         $("[data-test-id='password'] input").val(blockedUser.getPassword());
         $("[data-test-id='action-login']").click();
-        $("[data-test-id='error-notification']").shouldHave(text("Ошибка!"));
+        $("[data-test-id='error-notification']").shouldHave(text("Пользователь заблокирован"));
     }
 
     @Test
